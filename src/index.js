@@ -4,3 +4,4 @@ export * from './pricing.js';
 export * from './format.js';
 // Los módulos nuevos se exportan debajo de esta línea
 export * from './receipt.js';
+export * from './discounts.js';

@@ -10,6 +10,7 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ### Added
 - Generacion de recinvos de compras mediante el comando `receipt`.
 
+- Añade códigos de descuento SAVE10, SAVE20 y BLACKFRIDAY.
 ### Changed
 - Se amplio `formatPrice` para permitir alinear los montos mediantes el parametro `width`.
 
