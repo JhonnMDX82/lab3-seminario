@@ -8,8 +8,10 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Added
+- Generacion de recinvos de compras mediante el comando `receipt`.
 
 ### Changed
+- Se amplio `formatPrice` para permitir alinear los montos mediantes el parametro `width`.
 
 ### Fixed
 
