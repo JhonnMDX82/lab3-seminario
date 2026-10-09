@@ -1,5 +1,5 @@
 import { round2 } from './money.js';
-// Codigos de descuento disponibles para la tiendaa
+// Codigos de descuento disponibles para la tienda
 export const DISCOUNT_CODES = {
   SAVE10: 0.1,
   SAVE20: 0.2,
