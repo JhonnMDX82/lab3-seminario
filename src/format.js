@@ -1,3 +1,5 @@
+import { getCurrency, convert } from './currency.js';
+
 /**
  * Da formato a un precio para mostrarlo al usuario.
  *
@@ -8,14 +10,17 @@
 * @param {number} amount Monto a formatear.
  * @param {object} [options={}] Opciones de formato.
  * @param {number} [options.width=0] Ancho mínimo para alinear el precio a la derecha.
+ * @param {number} amount Monto a formatear.
+ * @param {string} [currency='BOB'] Código de la moneda (BOB, USD, EUR).
  * @returns {string} Precio formateado.
- *
  * @example
- * formatPrice(10)    // 'Bs 10.00'
- * formatPrice(25.5)  // 'Bs 25.50'
- * formatPrice(0)     // 'Bs 0.00'
+ * formatPrice(100, 'USD') // '$ 14.50'
+ * formatPrice(10)        // 'Bs 10.00'
  */
-export function formatPrice(amount, { width = 0 } = {}) {
-  const formatted = `Bs ${amount.toFixed(2)}`;
-  return formatted.padStart(width);
+export function formatPrice(amount, currency = 'BOB', { width = 0 } = {}) {
+  const curr = getCurrency(currency);
+  const convertedAmount = convert(amount, currency);
+  const formatted = `${curr.symbol} ${convertedAmount.toFixed(2)};
+  return formatted.padStart(width)`;
+
 }

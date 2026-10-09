@@ -11,6 +11,9 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 - Generacion de recinvos de compras mediante el comando `receipt`.
 
 - Añade códigos de descuento SAVE10, SAVE20 y BLACKFRIDAY.
+- Agrega el cálculo opcional del IVA del 13 % al total del carrito mediante `includeTax`.
+- Soporte para conversión y formateo de monedas (BOB, USD, EUR).
+
 ### Changed
 - Se amplio `formatPrice` para permitir alinear los montos mediantes el parametro `width`.
 
