@@ -22,3 +22,6 @@ test('suma el IVA al importe base', () => {
 test('suma el IVA a un importe decimal', () => {
   assert.equal(addTax(25.50), 28.82);
 });
+test('calcula el IVA de cero correctamente', () => {
+  assert.equal(calculateTax(0), 0);
+});
