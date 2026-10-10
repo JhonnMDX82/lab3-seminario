@@ -6,6 +6,10 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Unreleased]
+## [1.1.1] - 2026-10-09
+
+### Fixed
+- La búsqueda de productos ya no distingue mayúsculas de minúsculas.
 
 ## [1.1.0] - 2026-10-09
 
