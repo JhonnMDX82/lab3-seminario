@@ -20,3 +20,9 @@ test('searchProducts encuentra productos por parte del nombre', () => {
 test('el catálogo tiene productos', () => {
   assert.ok(products.length > 0);
 });
+test('searchProducts encuentra productos sin distinguir mayúsculas', () => {
+  const results = searchProducts('laptop');
+
+  assert.equal(results.length, 1);
+  assert.equal(results[0].sku, 'LAP-001');
+});
